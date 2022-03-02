@@ -1,9 +1,10 @@
 from utils.feature_extraction_util import test_common_words,test_total_words,test_fetch_token_features,test_fetch_fuzzy_features
+
 import numpy as np
 import pickle
 def test_query_creator(q1,q2):
     test_data= []
-    cv=pickle.load('model\cv.pkl')
+    cv=pickle.load(open('model\cv.pkl','rb'))
     #Basic Features
     test_data.append(len(q1))
     test_data.append(len(q2))
@@ -26,5 +27,5 @@ def test_query_creator(q1,q2):
     q1_bag=cv.transform([q1]).toarray()
     q2_bag=cv.transform([q2]).toarray()
 
-    return np.hstack((np.array(test_data).reshape(1,18),q1_bag,q2_bag))
+    return np.hstack((np.array(test_data).reshape(1,19),q1_bag,q2_bag))
 
