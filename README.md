@@ -33,5 +33,5 @@ A NLP problem where we need to find whether 2 questions are semantically similar
     token_set_ratio: token_set_ratio from fuzzywuzzy  
 
 **Model Used**: RandomForestClassifier(Accuracy:80%)  
-**Future Scope**: More Feature Engineering and use of Neural Network with bigger sample size.
+**Future Scope**: More Feature Engineering and use of Neural Network with bigger sample size. And different vectorization techniques(tf-idf,word2vec)
 
