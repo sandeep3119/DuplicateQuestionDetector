@@ -6,4 +6,3 @@ fuzzywuzzy
 distance
 sklearn
 streamlit
-nltk
